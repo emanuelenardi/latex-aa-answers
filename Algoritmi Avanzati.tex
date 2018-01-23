@@ -1,0 +1,82 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[italian]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+%% Sets page size and margins
+\usepackage[
+	a4paper,
+	top = 1cm,
+	bottom = 2cm,
+	left = 3cm,
+	right = 3cm,
+	marginparwidth = 1.75cm
+]{geometry}
+
+\title{Algoritmi Avanzati}
+\author{Emanuele Nardi}
+
+\begin{document}
+
+% It suppress page numbering
+\pagenumbering{gobble}
+
+\maketitle
+
+\section*{Domande a risposta multipla}
+
+\begin{enumerate}
+
+	\item Un sistema di machine learning si dice \emph{overfitting} quando è troppo specializzato sui dati di addestramento e non è in grado di generare previsioni adeguate ai dati nuovi;
+
+	\item In una regressione polinomiale di secondo grado in una variabile vanno determinati \emph{tre coefficienti};
+
+	\item L’accuratezza indica il numero di previsioni corrette per un modello di classificazione;
+
+	\item Il formato CSV è di tipo strutturato;
+
+	\item \'E preferibile che gli insiemi di addestramento e di validazione siano disgiunti perché siamo interessati a valutare le prestazioni del sistema su esempi non visti durante l’addestramento;
+
+	\item La funzione sigmoide mappa il valore reale in uscita dal regressore sull’intervallo [0, 1];
+
+	\item La funzione sigmoide può essere definita come \( \frac{1}{1 + e^{−t}} \);
+
+	\item La \emph{normalizzazione delle colonne di un database} serve per eguagliare gli intervalli di variabilità delle colonne;
+
+	\item Per \emph{ridurre il numero di falsi negativi} per un modello di classificazione dobbiamo massimizzare la sensibilità;
+
+	\item Una partizione di un dataset si dice \emph{stratificata} quando i campioni di ciascun sottoinsieme della partizione si trovano nello stesso ordine in cui compaiono nel dataset originale;
+
+	\item \'E possibile utilizzare KNN per la classificazione se la classe in uscita ha più di due valori perché la funzione di decisione si basa sul valore di maggioranza, indipendente dal loro numero;
+
+	\item La \emph{K-fold cross validation} consiste nella separazione dei campioni in K gruppo distinti che si usano a rotazione per la validazione;
+
+	\item Il \emph{metodo di discesa lungo il gradiente} è un metodo per trovare un minimo locale di una funzione differenziale in più variabili;
+
+	\item L'Impurità di Gini di una variabile casuale \( Y \) si definisce come la probabilità di errore nel prevedere un esito \( y \in Y \) se si sceglie un valore casuale \( \tilde{y} \) con la stessa distribuzione di probabilità;
+
+	\item L’\emph{entropia} di una variabile casuale \( Y \) dipende soltanto dai valori di probabilità;
+
+	\item L’\emph{impurità} di Gini di una variabile casuale \( Y \) dipende soltanto dal dominio di \( Y \);
+
+	\item La \emph{mediana della distribuzione} non risente molto della presenza di valori estremi (outliers) quindi è spesso opportuno utilizzarla per binarizzare una variabile continua, al posto della media;
+
+	\item Se abbiamo una collezione di punti della forma \( (x, x_{2} ) \), con \( x \in [−1, 0] \) distribuito uniformemente, il \emph{coefficiente di correlazione} fra le due coordinate vale \( \rho = 0 \), perché la relazione non è lineare;
+
+	\item Il \emph{calcolo dell’entropia} di una variabile casuale \textbf{non} è un algoritmo greedy;
+
+	\item Ad ogni iterazione dell’algoritmo di clustering agglomerativo gerarchico su una matrice di distanze, \emph{i due cluster da aggregare si scelgono sulla base del linkage criterion scelto};
+
+	\item Il linkage criterion \emph{non} ha influenza sul bilanciamento del dendogramma.
+
+\end{enumerate}
+
+\end{document}
