@@ -1,0 +1,67 @@
+\begin{enumerate}
+
+	\item L'\emph{Impurità di Gini} di una variabile casuale \( Y \) \emph{si definisce come} la probabilità di errore nel prevedere un esito \( y \in Y \) se si sceglie un valore casuale \( \tilde{y} \) con la stessa distribuzione di probabilità;
+
+	\item L'\emph{impurità} di Gini di una variabile casuale \( Y \) dipende soltanto dal dominio di \( Y \);
+
+	\item L'\emph{entropia} di una variabile casuale \( Y \) dipende soltanto dai valori di probabilità;
+
+	\item La \emph{mediana della distribuzione} non risente molto della presenza di valori estremi (outliers) quindi è spesso opportuno utilizzarla per binarizzare una variabile continua, al posto della media;
+
+	\item Se abbiamo una collezione di punti della forma \( (x, x_{2} ) \), con \( x \in [−1, 0] \) distribuito uniformemente, il \emph{coefficiente di correlazione} fra le due coordinate vale \( \rho = 0 \), perché la relazione non è lineare;
+
+	\item Il \emph{calcolo dell'entropia} di una variabile casuale \textbf{non} è un algoritmo greedy;
+
+	\item Ad ogni iterazione dell'algoritmo di clustering agglomerativo gerarchico su una matrice di distanze, \emph{i due cluster da aggregare si scelgono sulla base del linkage criterion scelto};
+
+	\item Il \emph{linkage criterion} \textbf{non} ha influenza sul bilanciamento del dendogramma.
+
+\rule{\linewidth}{0.4pt}
+
+	\item In un \emph{albero di decisione addestrato in base all'information gain}, la decisione attribuita a un nodo minimizza l'entropia attesa della variabile di output nei figli.
+
+	Il fattore da valutare è sempre l'entropia della varibile di output, in quanto misura dell'incertezza del valore da prevedere;
+
+	\item In un \emph{albero di decisione addestrato in base all'impurita di Gini}, la decisione attribuita a un nodo minimizza l'impurità attesa della variabile di output nei figli.
+
+	L'obiettivo di un albero di decisione è di avere nodi puri, quindi di minimizzare l'impurità. Come nella domanda precedente, la variabile di cui ci interessa valutare l'incertezza è sempre l'output;
+
+	\item L'intervallo di variabilità dell'entropia di una distribuzione di probabilità discreta è \( [0, +\infty) \).
+
+	L'entropia di una variabile discreta non è mai negativa, e può assumere qualsiasi valore, a partire da 0 (esito certo). %
+	Per rendersi conto che il suo valore non è limitato, basta considerare la sua interpretazione come “numero di bit” necessari a rappresentare l'informazione;
+
+	\item L'intervallo di variabilità dell'impurità di Gini di una distribuzione di probabilità discreta è \( [0, 1] \).
+
+	L'impurita di Gini è una probabilità, quindi varia tra 0 e 1. In realtà, il valore 1 non è ottenibile;
+
+	\item L'intervallo di variabilità dell'indice di correlazione di Pearson fra due variabili casuali discrete è \( [-1, 1] \).
+
+	La correlazione è una covarianza normalizzata, e può assumere valori negativi;
+
+	\item Il parametro principale \( K \) dell'algoritmo K-means indica il numero di cluster in cui suddividere il dataset.
+
+	\( K \) rappresenta il numero di centroidi o prototipi. %
+	Da non confondere, ovviamente, con l'omonimo parametro dell'algoritmo KNN. Il numero di iterazioni non è generalmente prefissato;
+
+	\item In un'iterazione dell'algoritmo di clustering agglomerativo gerarchico vengono uniti i cluster a distanza maggiore.
+
+	I due cluster da unire sono sempre i più simili (o meno distanti), indipendentemente dal linkage criterion, che entra in gioco solo nella determinazione di queste distanze;
+
+	\item Sono necessarie \( n - 1 \) iterazioni per un'esecuzione completa dell'algoritmo di clustering gerarchico agglomerativo su un insieme di \( n \) elementi.
+
+	Si parte da \( n \) cluster e ad ogni iterazione se ne uniscono due, riducendo di uno il numero complessivo. %
+	Si termina quando c'è un solo cluster;
+
+	\item Date due variabili casuali discrete \(X\) e \(Y\), se la loro informazione mutua vale \( I(X;Y) = 0 \) possiamo dire che le due variabili sono indipendenti: la conoscenza dell'esito di \(X\) non ci dice nulla sull'esito di \(Y\).
+
+	Significa che l'entropia di \(X\) non varia se la si condiziona alla conoscenza di \(Y\);
+
+	\item Date due variabili casuali discrete \(X\) e \(Y\), se la loro informazione mutua vale \(I(X;Y) = 1\) possiamo dire che le due variabili sono dipendenti: la conoscenza dell'esito di \(X\) riduce l'informazione necessaria a comunicare l'esito di \(Y\).
+
+	L'informazione mutua rappresenta la diminuzione dell'entropia di \(X\) quando si conosce \(Y\). %
+	In questo caso la diminuzione c'è. %
+	L'entropia non misura dipendenze lineari. %
+	Si osservi che, dato che l'entropia può assumere qualunque valore positivo, una diminuzione pari a 1 non rappresenta necessariamente una dipendenza completa.
+
+\end{enumerate}

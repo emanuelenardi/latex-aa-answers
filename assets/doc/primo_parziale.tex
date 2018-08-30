@@ -1,0 +1,62 @@
+\begin{enumerate}
+
+	\item Un sistema di machine learning si dice \emph{overfitting} quando è troppo specializzato sui dati di addestramento e non è in grado di generare previsioni adeguate ai dati nuovi;
+
+	\item In una regressione polinomiale di secondo grado in una variabile vanno determinati \emph{tre coefficienti};
+
+	\item L’accuratezza indica il \emph{numero di previsioni corrette} per un modello di classificazione;
+
+	\item Il formato CSV è di tipo \emph{strutturato};
+
+	\item \'E preferibile che gli insiemi di addestramento e di validazione \emph{siano disgiunti} perché siamo interessati a valutare le prestazioni del sistema su esempi non visti durante l’addestramento;
+
+	\item La \emph{funzione sigmoide} mappa il valore reale in uscita dal regressore sull’intervallo [0, 1].
+
+	La funzione sigmoide non “decide” nulla, né determina valori di soglia, i quali devono semmai essere utilizzati a valle dell’applicazione della sigmoide;
+
+	\item La \emph{funzione sigmoide} può essere definita come \( \frac{1}{1 + e^{−t}} \).
+
+	\'E definita su tutti i reali;
+
+	\item La \emph{normalizzazione delle colonne di un database} serve per eguagliare gli intervalli di variabilità delle colonne.
+
+	Alcuni algoritmi sono sensibili a differenze eccessive fra gli ordini di grandezza dei diversi attributi; la normalizzazione serve a far variare tutti gli attributi all’interno di uno stesso intervallo. I valori negativi o nulli non sono, normalmente, un problema;
+
+	\item Per \emph{ridurre il numero di falsi negativi} per un modello di classificazione dobbiamo massimizzare la sensibilità;
+
+	\item Una partizione di un dataset si dice \emph{stratificata} quando i campioni di ciascun sottoinsieme della partizione si trovano nello stesso ordine in cui compaiono nel dataset originale;
+
+	\item \'E possibile utilizzare \emph{KNN per la classificazione} se la classe in uscita ha più di due valori perché la funzione di decisione si basa sul valore di maggioranza, indipendente dal loro numero;
+
+	\item \'E possibile utilizzare l’algoritmo \emph{KNN su problemi di regressione} calcolando la media delle \( y \) dei \( K \) elementi più vicini a quello incognito.
+
+	Un esempio è fornito nelle dispense e considera la media pesata con pesi inversamente proporzionali alla distanza;
+
+	\item La \emph{K-fold cross validation} consiste nella separazione dei campioni in K gruppo distinti che si usano a rotazione per la validazione;
+
+	\item Il \emph{metodo di discesa lungo il gradiente} è un metodo per trovare un minimo locale di una funzione differenziale in più variabili reali.
+
+	Si tratta di un algoritmo iterativo di approssimazione per trovare un minimo di una funzione. Non serve a trovare le derivate parziali (che si possono calcolare a tavolino o, in alternativa, stimare), e non ha alcuna connessione immediata con l’ottimizzazione di un classificatore KNN;
+
+\rule{\linewidth}{0.4pt}
+
+	\item In una regressione polinomiale di terzo grado in una variabile vanno determinati \emph{quattro coefficienti}.
+
+	Un polinomio di terzo grado ha la forma \( \beta_3 x^3 + \beta_2 x^2 + \beta_1 x + \beta_0 \), quindi servono quattro coefficienti;
+
+	\item Per valutare la precisione di un classificatore in una matrice di precisione vanno utilizzate le caselle dei veri positivi (TP) e dei falsi positivi (FP).
+
+	La precisione si valuta considerando le sole risposte positive di un classificatore;
+
+	\item Per valutare  la sensibilità (o recall) di un classificatore in una matrice di precisione vanno utilizzate le caselle dei veri positivi (TP) e i falsi negativi (FN).
+
+	La sensibilità si valuta considerando soltanto i casi positivi del dataset;
+
+	\item Per valutare l’accuratezza di un classificatore vanno utilizzate \emph{tutte} le caselle della matrice di confusione.
+
+	Non è possibile calcolare l’accuratezza se non si conoscono tutte le caselle, visto che è necessario conoscere la numerosità del dataset;
+
+	\item \'E preferibile che gli insiemi di training e di validazione siano disgiunti perché siamo interessati a valutare le prestazioni del sistema su esempi non visti durante l’addestramento.
+
+	La valutazione delle prestazioni richiede, semmai, che \emph{le dimensioni dei due dataset siano massimizzate}, non minimizzate, ovviamente sotto il vincolo che i due insiemi siano disgiunti;
+\end{enumerate}
